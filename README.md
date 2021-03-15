@@ -15,9 +15,16 @@ Help section:
 -n      Number of passwords to generate (default: 1)
 -h      Help
 ```
-Example: 
+
+Example #1: Generate a password with 32 characters (no symbols)
 ```
-# ./output/pasgen -l 16 -c nuls -n 3
+$ ./output/pasgen 
+XUr9MG308gSnXstz4x1Q1118P3WHOTil
+```
+
+Example #2: Generate 3 passwords, with 16 characters, with [n]umeric, [u]ppercase, [l]owercase and [s]ymbol characters
+```
+$ ./output/pasgen -l 16 -c nuls -n 3
 D8S"n1}18Ajr`sP2
 F*_}w!lC9<Fh~[+5
 8#D2rW"4'h0=Jz36
