@@ -9,6 +9,7 @@ Run `make` then check the output folder
 ## How to use
 Help section:
 ```
+$ ./output/pasgen -h
         [CLI Password Generator]
 -l      Password length (default: 32)
 -c      Caracter set (n: number, l: lowercase, u: uppercase, s: symbols) (default: nul)
