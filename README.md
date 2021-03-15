@@ -3,10 +3,10 @@ CLI Password Generator written in C++
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/OsoianMarcel/promise-all-always/blob/master/LICENSE)
 
-# Build
-Run `Makefile` then check the output folder
+## Build
+Run `make` then check the output folder
 
-# How to use
+## How to use
 Help section:
 ```
         [CLI Password Generator]
@@ -18,19 +18,19 @@ Help section:
 Example: 
 ```
 # ./output/pasgen -l 16 -c nuls -n 3
-7/6_`lr8X"11sgi5
-h:9j'7-D46*GZk|6
-%BI4Tf6ae]z)2vo!
+D8S"n1}18Ajr`sP2
+F*_}w!lC9<Fh~[+5
+8#D2rW"4'h0=Jz36
 ```
 
-# Contribute
+## Contribute
 
 Contributions to the package are always welcome!
 
 * Report any bugs or issues you find on the [issue tracker].
 * You can grab the source code at the package's [Git repository].
 
-# License
+## License
 
 All contents of this package are licensed under the [MIT license].
 
