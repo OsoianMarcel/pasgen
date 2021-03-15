@@ -8,9 +8,12 @@ int main(int argc, char *argv[]) {
 	ArgsParser args(argc, argv);
 
 	if (args.exists("-h")) {
-		std::cout << "-l\tPassword length" << std::endl;
-		std::cout << "-c\tCharset set (n: number, l: lowercase, u: uppercase, s: symbols)" << std::endl;
-		std::cout << "-n\tNumber of passwords" << std::endl;
+		std::cout << "\t[CLI Password Generator]" << std::endl;
+		std::cout << "-l\tPassword length (default: 32)" << std::endl;
+		std::cout << "-c\tCaracter set (n: number, l: lowercase, u: uppercase, s: symbols) (default: nul)" << std::endl;
+		std::cout << "-n\tNumber of passwords to generate (default: 1)" << std::endl;
+		std::cout << "-h\tHelp" << std::endl;
+		return 0;
 	}
 
 	PasGen PasGen;

@@ -9,9 +9,10 @@ Run `Makefile` then check the output folder
 # How to use
 `./output/main -l 16 -c nuls -n 3`
 ```
--l      Password length
--c      Charset set (n: number, l: lowercase, u: uppercase, s: symbols)
--n      Number of passwords
+        [CLI Password Generator]
+-l      Password length (default: 32)
+-c      Caracter set (n: number, l: lowercase, u: uppercase, s: symbols) (default: nul)
+-n      Number of passwords to generate (default: 1)
 -h      Help
 ```
 
