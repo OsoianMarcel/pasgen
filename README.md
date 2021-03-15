@@ -1,4 +1,4 @@
-# promise-all-always
+# PasGen
 CLI Password Generator written in C++ (hobby project)
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/OsoianMarcel/promise-all-always/blob/master/LICENSE)
