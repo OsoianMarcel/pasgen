@@ -1,0 +1,6 @@
+/.vscode
+
+/output/*
+!/output/.gitkeep
+
+*.o
