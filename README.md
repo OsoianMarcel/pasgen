@@ -34,6 +34,6 @@ Contributions to the package are always welcome!
 
 All contents of this package are licensed under the [MIT license].
 
-[issue tracker]: https://github.com/OsoianMarcel/promise-all-always/issues
-[Git repository]: https://github.com/OsoianMarcel/promise-all-always
+[issue tracker]: https://github.com/OsoianMarcel/pasgen/issues
+[Git repository]: https://github.com/OsoianMarcel/pasgen
 [MIT license]: LICENSE
