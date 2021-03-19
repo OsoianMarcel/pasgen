@@ -3,20 +3,37 @@
 
 #include "pas_gen.hpp"
 #include "args_parser.hpp"
+#include "spent_time.hpp"
 
 int main(int argc, char *argv[]) {
 	ArgsParser args(argc, argv);
-
+	
 	if (args.exists("-h")) {
 		std::cout << "\t[CLI Password Generator]" << std::endl;
 		std::cout << "-l\tPassword length (default: 32)" << std::endl;
 		std::cout << "-c\tCaracter set (n: number, l: lowercase, u: uppercase, s: symbols) (default: nul)" << std::endl;
 		std::cout << "-n\tNumber of passwords to generate (default: 1)" << std::endl;
+		std::cout << "-us\tGenerate and use additionally user seed" << std::endl;
 		std::cout << "-h\tHelp" << std::endl;
 		return 0;
 	}
 
-	PasGen PasGen;
+	unsigned long userSeed = 0;
+
+	if (args.exists("-us")) {
+		const unsigned short enters = 3;
+		SpentTime st;
+		std::cout << "Press ENTER " << enters << " times to generate your unique seed:" << std::endl;
+		for (unsigned short sn = enters; sn >= 1; sn--) {
+			std::cout << "> " << sn;
+			std::cin.get();
+			userSeed += st.getDuration() * sn;
+		}
+		std::cout << "Your seed: " << userSeed << std::endl;
+		std::cout << "------------------------------" << std::endl;
+	}
+
+	PasGen PasGen(userSeed);
 
 	if (args.exists("-l")) {
 		try {

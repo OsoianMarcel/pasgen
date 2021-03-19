@@ -2,7 +2,7 @@
 
 static const char SYMBOLS[] = "!\";#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
-PasGen::PasGen() {
+PasGen::PasGen(unsigned long userSeed) {
     std::random_device rd;
 
     std::mt19937::result_type seed = rd() ^ (
@@ -13,7 +13,8 @@ PasGen::PasGen() {
         (std::mt19937::result_type)
         std::chrono::duration_cast<std::chrono::microseconds>(
                 std::chrono::high_resolution_clock::now().time_since_epoch()
-            ).count()
+            ).count() +
+        (std::mt19937::result_type)userSeed
     );
 
     std::mt19937 gen(seed);

@@ -12,7 +12,7 @@ typedef char (PasGen::*PasGenRandFn)();
 
 class PasGen {
     public:
-        PasGen(void);
+        PasGen(unsigned long userSeed = 0);
         
         std::string gen(void);
 
