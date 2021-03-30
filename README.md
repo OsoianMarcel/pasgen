@@ -14,6 +14,7 @@ $ ./output/pasgen -h
 -l      Password length (default: 32)
 -c      Caracter set (n: number, l: lowercase, u: uppercase, s: symbols) (default: nul)
 -n      Number of passwords to generate (default: 1)
+-us     Generate and use additionally user seed
 -h      Help
 ```
 
