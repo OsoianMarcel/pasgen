@@ -16,7 +16,11 @@ bool ArgsParser::exists(std::string paramName) {
     return _args.find(paramName) != _args.end();
 }
 
-std::string ArgsParser::get(std::string paramName) {
+std::string ArgsParser::get(std::string paramName, std::string defVal) {
+	if (!exists(paramName)) {
+		return defVal;
+	}
+
     return _args[paramName];
 }
 
