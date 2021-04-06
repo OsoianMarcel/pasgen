@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
 		std::cout << "-l\tPassword length (default: 32)" << std::endl;
 		std::cout << "-c\tCaracter set (n: number, l: lowercase, u: uppercase, s: symbols) (default: nul)" << std::endl;
 		std::cout << "-n\tNumber of passwords to generate (default: 1)" << std::endl;
-		std::cout << "-us\tGenerate and use additionally user seed" << std::endl;
+		std::cout << "-us\tGenerate and use additionally user seed (experimental)" << std::endl;
 		std::cout << "-h\tHelp" << std::endl;
 		return 0;
 	}
